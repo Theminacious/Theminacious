@@ -15,7 +15,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
-      - uses: ad-m/github-push-action@v2 # Correct action version
       - name: Commit & Push
         run: |
           git config user.name github-actions
@@ -23,3 +22,5 @@ jobs:
           git add -A .
           git commit -m "generated"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
