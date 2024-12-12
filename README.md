@@ -1,5 +1,6 @@
 # 💫 **About Me**
-💡 **Innovation Enthusiast:** Turning caffeine into code, one bug fix at a time.  
+💡 **Innovation Enthusiast:** Turning caffeine into code, one bug fix at a time.
+  
 🛠️ **Code Ninja:** Writing clean code while my commit history tells another story.  
 🚀 **Open Source Rebel:** Contributing to projects and occasionally breaking stuff (on purpose).  
 🎯 **Always Learning:** Mastering the fine art of Googling errors like a true wizard.  
@@ -7,9 +8,11 @@
 
 🌟 *Let’s collaborate, tackle challenges, or just laugh at error messages together!*  
 
-<div align="center">
-  <img src="https://via.placeholder.com/600x300.png?text=Cool+Developer+Image" alt="Cool Developer" />
+<div align="right">
+  <img src="https://visitcount.itsvg.in/api?id=theminacious&icon=10&color=3" alt="Visitor Count" />
 </div>
+
+![image](https://github.com/user-attachments/assets/016f05bb-5d75-4c86-9cbf-d00054ee138c)
 
 ---
 
@@ -54,7 +57,7 @@
 
 ---
 
-# **Updated Badges (B+)**
+# **Badges (B+)**
 - **JavaScript**: ![JavaScript B+](https://img.shields.io/badge/JavaScript-B%2B-yellowgreen?style=flat&logo=javascript&logoColor=white)
 - **Python**: ![Python B+](https://img.shields.io/badge/Python-B%2B-4B8BBE?style=flat&logo=python&logoColor=white)
 - **React**: ![React B+](https://img.shields.io/badge/React-B%2B-61DAFB?style=flat&logo=react&logoColor=white)
