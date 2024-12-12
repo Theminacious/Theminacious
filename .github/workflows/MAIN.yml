@@ -13,10 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # Checks out the repository
-    - uses: actions/checkout@v3  # Use v3 for stability
+    # Checkout the repository
+    - uses: actions/checkout@v3
 
-    # Generates the snake GIF and SVG
+    # Generates the snake GIF and SVG (Ensure correct paths for the GIF and SVG)
     - uses: Platane/snk@master
       id: snake-gif
       with:
@@ -24,21 +24,20 @@ jobs:
         gif_out_path: dist/github-contribution-grid-snake.gif  # Path for the GIF
         svg_out_path: dist/github-contribution-grid-snake.svg  # Path for the SVG
 
-    # Show the status of the build (useful for debugging)
+    # Show the status of the build
     - run: git status
 
-    # Push the generated GIF and SVG files to the repository
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: main  # Change to 'main' branch instead of 'master'
-        force: true  # Force push to avoid conflicts
+    # Commit and push the changes to the 'main' branch
+    - name: Commit and Push changes
+      run: |
+        git add dist/*
+        git commit -m "Add generated snake GIF and SVG"
+        git push origin main  # Push to 'main' branch instead of 'master'
 
-    # Deploy the generated files to GitHub Pages (optional)
+    # Deploy to GitHub Pages (optional)
     - uses: crazy-max/ghaction-github-pages@v2.1.3
       with:
-        target_branch: output  # The branch to store the output
-        build_dir: dist  # The directory with the generated files
+        target_branch: output  # Store files in 'output' branch
+        build_dir: dist  # Directory with generated files (GIF and SVG)
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
