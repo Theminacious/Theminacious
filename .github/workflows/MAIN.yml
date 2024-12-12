@@ -14,7 +14,7 @@ jobs:
 
     steps:
     # Checks out the repository
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3  # Use v3 for stability
 
     # Generates the snake GIF and SVG
     - uses: Platane/snk@master
@@ -32,8 +32,8 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: master  # Or use the branch you prefer
-        force: true
+        branch: main  # Change to 'main' branch instead of 'master'
+        force: true  # Force push to avoid conflicts
 
     # Deploy the generated files to GitHub Pages (optional)
     - uses: crazy-max/ghaction-github-pages@v2.1.3
